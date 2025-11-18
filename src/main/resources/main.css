@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'AJ 00';
+    src: url("./aj00.ttf");
+}
+
+.root {
+    -fx-background-color: linear-gradient(to bottom, #E0E0E0, #F5F5F5);
+    -fx-font-family: 'AJ 00';
+    -fx-font-size: 16;
+}
+
+#title {
+    -fx-text-fill: #2E8B57;
+    -fx-font-size: 28;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0, 1, 1);
+}
+
+#tfFilter {
+    -fx-border-color: #CCCCCC;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 2, 0, 1, 1);
+}
+
+#tfFilter:focused {
+    -fx-border-color: #2E8B57;
+    -fx-effect: dropshadow(gaussian, rgba(46,139,87,0.3), 3, 0, 1, 1);
+}
+
+#lvIdioms {
+    -fx-background-color: white;
+    -fx-border-color: #CCCCCC;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 2, 0, 1, 1);
+}
+
+#lvIdioms .list-cell {
+    -fx-padding: 8px;
+    -fx-border-color: transparent;
+}
+
+#lvIdioms .list-cell:filled:selected {
+    -fx-background-color: #E0F0E0;
+    -fx-text-fill: #2E8B57;
+    -fx-font-weight: bold;
+}
+
+#lvIdioms .list-cell:filled:hover {
+    -fx-background-color: #F0F8F0;
+}
+
+.label {
+    -fx-text-fill: #333333;
+    -fx-wrap-text: true;
+}
+
+#lbIdiom {
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2E8B57;
+    -fx-padding: 10 0 5 0;
+}
+
+#lbMeaning {
+    -fx-font-size: 16;
+    -fx-font-style: italic;
+    -fx-padding: 5 0 5 0;
+    -fx-background-color: #F8F8F8;
+    -fx-border-color: #EEEEEE;
+    -fx-border-width: 0 0 0 3;
+    -fx-border-style: solid;
+    -fx-border-color: #2E8B57;
+    -fx-padding: 10;
+    -fx-background-radius: 0 5px 5px 0;
+}
+
+#lbExample1, #lbExample2 {
+    -fx-padding: 5 0 5 0;
+}
